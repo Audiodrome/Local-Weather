@@ -1,3 +1,4 @@
+/*global document:true $:true*/
 document.addEventListener('DOMContentLoaded', function() {
   get_location();
   var temperature = document.getElementById('t_unit');
@@ -14,9 +15,9 @@ function get_location ()
 function get_weather (data)
 {
   var weather_id = '28ff6e61618bc2901d472e94b023212f',
-      lat = data.latitude,
-      lon = data.longitude,
-      KtoC = -273.15;
+    lat = data.latitude,
+    lon = data.longitude,
+    KtoC = -273.15;
 
   var weather_url = 'http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&appid=';
 
@@ -24,8 +25,8 @@ function get_weather (data)
     url: weather_url + weather_id,
     success: function(data) {
       var weather = data,
-          element = null;
-      console.error(weather);
+        element = null;
+      //console.error(weather);
       element = document.getElementById('t_unit');
       element.innerHTML = ' °C';
       element = document.getElementById('current_location');
@@ -43,8 +44,8 @@ function change_temperature_unit()
 {
 
   var temperature = document.getElementById('temperature').innerText,
-      t_unit = document.getElementById('t_unit').innerText,
-      e = null;
+    t_unit = document.getElementById('t_unit').innerText,
+    e = null;
 
   temperature = parseInt(temperature);
 
