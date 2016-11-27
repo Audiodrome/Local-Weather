@@ -13,19 +13,35 @@
 
     <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet">
+    <link href="animations.css" rel="stylesheet">
+
   </head>
 
   <body>
 
+    <h1 id="title" class="row josefin-semibold">Weather</h1>
+
     <div id="main" class="row">
-      <div class="col-md-12 robo-light">Weather
-        <p id="current_location" class="robo-light"></p>
-        <p id="temperature" class="robo-light inline"></p>
+      <div class="col-md-12">
+        <p id="current_location" class="rail-light"></p>
+        <p id="temperature" class="rail-light inline"></p>
         <p class="inline">
-          <a href="#" id="t_unit" class="robo-light"></a>
+          <a href="#" id="t_unit" class="rail-medium"></a>
         </p>
-        <p id="description" class="robo-light"></p>
+        <p id="description" class="rail-light"></p>
       </div>
+
+    </div>
+    <div class="weatherbox">
+      <div class="rainy"></div>
+    <!--
+      <div class="cloudy"></div>
+      <div class="rainy"></div>
+      <div class="snowy"></div>
+      <div class="rainbow"></div>
+      <div class="starry"></div>
+      <div class="stormy"></div>
+    -->
     </div>
 
     <!-- Bootstrap core JavaScript
