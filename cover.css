@@ -53,11 +53,21 @@ table {
 
 /****************************************************/
 
-body {
+#body {
   background: #00BBFF;
 }
 
-#main {
+#footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+
+#info {
   width: relative;
   margin: 1% auto;
   padding: 1% 1% 1% 1%;
@@ -89,10 +99,10 @@ body {
   font-size: 4em;
   font-weight: 600;
 }
-.robo-light {
+.robo-thin {
   font-family: 'Roboto', sans-serif;
-  font-size: 1em;
-  font-weight: 100;
+  font-size: 1.1em;
+  font-weight: 300;
 }
 
 .inline {
