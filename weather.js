@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function GetLocation()
 {
-  $.getJSON(('https://freegeoip.net/json/?callback=?'), function(data) {
+  $.getJSON(('https://freegeoip.net/json/github.com'), function(data) {
     GetWeather(data);
   });
 }
